@@ -1,0 +1,27 @@
+.simditor .simditor-toolbar .toolbar-menu-emoji {
+  width: 282px;
+}
+.simditor .simditor-toolbar .emoji-list {
+  overflow: hidden;
+}
+.simditor .simditor-toolbar .emoji-list li {
+  float: left;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+}
+.simditor .simditor-toolbar .emoji-list li:hover {
+  background-color: #f0f0f0;
+}
+.simditor .simditor-toolbar .emoji-list img {
+  display: block;
+}
+.simditor .simditor-body img[data-emoji] {
+  width: 1.1em;
+  height: 1.1em;
+  display: inline-block;
+  margin: 0;
+  vertical-align: text-top;
+  max-width: inherit;
+  box-shadow: none;
+}

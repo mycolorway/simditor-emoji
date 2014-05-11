@@ -1,0 +1,39 @@
+.simditor {
+  .simditor-toolbar {
+    .toolbar-menu-emoji {
+      width: 282px;
+    }
+
+    .emoji-list {
+      overflow: hidden;
+
+      li {
+        float: left;
+        cursor: pointer;
+        padding: 4px;
+        border-radius: 4px;
+
+        &:hover {
+          background-color: #f0f0f0;
+        }
+      }
+
+      img {
+        display: block;
+      }
+    }
+  }
+
+  .simditor-body {
+    img[data-emoji] {
+      width: 1.1em;
+      height: 1.1em;
+      display: inline-block;
+      margin: 0;
+      vertical-align: text-top;
+      max-width: inherit;
+      box-shadow: none;
+    }
+  }
+}
+

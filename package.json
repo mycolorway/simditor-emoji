@@ -1,0 +1,22 @@
+{
+  "name": "simditor-emoji",
+  "version": "0.0.1",
+  "description": "A simditor emoji plugin",
+  "main": "src/simditor-emoji.coffee",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mycolorway/simditor-emoji.git"
+  },
+  "author": "tinyfive",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mycolorway/simditor-emoji/issues"
+  },
+  "homepage": "https://github.com/mycolorway/simditor-emoji",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-coffee": "~0.10.1",
+    "grunt-contrib-sass": "~0.7.3"
+  }
+}
