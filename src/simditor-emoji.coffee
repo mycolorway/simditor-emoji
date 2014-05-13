@@ -54,6 +54,12 @@ class EmojiButton extends SimditorButton
 
   menu: true
 
+  constructor: (args...) ->
+    super args...
+
+    $.merge @editor.formatter._allowedTags, ['img']
+    $.merge @editor.formatter._allowedAttributes['img'], ['data-emoji', 'data-non-image']
+
   renderMenu: ->
     tpl = '''
       <ul class="emoji-list">
@@ -76,7 +82,10 @@ class EmojiButton extends SimditorButton
       return unless @editor.inputManager.focused
 
       $img = $(e.currentTarget).find('img').clone()
-                .data('emoji', true).attr('data-emoji', true)
+                .attr({
+                  'data-emoji': true
+                  'data-non-image': true
+                })
       @editor.selection.insertNode $img
 
       @editor.trigger 'valuechanged'

@@ -27,8 +27,7 @@
 		</textarea>
 	</section>
 
-	<script type="text/javascript" src="vendor/bower/simditor/lib/simditor-all.min.js"></script>
-	<script type="text/javascript" src="vendor/bower/emojify/emojify.min.js"></script>
+	<script type="text/javascript" src="vendor/bower/simditor/lib/simditor-all.js"></script>
 	<script type="text/javascript" src="lib/simditor-emoji.js"></script>
 	<script type="text/javascript">
 		$(function() {
@@ -37,7 +36,7 @@
 				placeholder: '这里输入文字...',
 				pasteImage: true,
 				toolbar: ['title', 'bold', 'italic', 'underline', 'strikethrough', '|', 'ol', 'ul', 'blockquote', 'code', 'table', '|', 'link', 'image', 'emoji', 'hr', '|', 'indent', 'outdent'],
-				defaultImage: 'assets/images/image.png',
+				defaultImage: 'images/image.png',
 				upload: location.search === '?upload' ? {
 					url: '/upload'
 				} : false,
