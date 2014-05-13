@@ -1,7 +1,7 @@
 
 class EmojiButton extends SimditorButton
 
-  @avaliableImages = [
+  @images = [
     'smile'
     'smiley'
     'laughing'
@@ -57,8 +57,7 @@ class EmojiButton extends SimditorButton
   constructor: (args...) ->
     super args...
 
-    $.merge @editor.formatter._allowedTags, ['img']
-    $.merge @editor.formatter._allowedAttributes['img'], ['data-emoji', 'data-non-image']
+    $.merge @editor.formatter._allowedAttributes['img'], ['data-emoji']
 
   renderMenu: ->
     tpl = '''
@@ -66,12 +65,15 @@ class EmojiButton extends SimditorButton
       </ul>
     '''
 
-    avaliableImages = @editor.opts.emoji.avaliableImages || EmojiButton.avaliableImages
+    opts = $.extend({
+      imagePath: 'images/emoji/'
+      images: EmojiButton.images
+    }, @editor.opts.emoji || {})
 
     html = ""
-    dir  = @editor.opts.emoji.imagePath.replace(/\/$/, '') + '/'
+    dir  = opts.imagePath.replace(/\/$/, '') + '/'
 
-    for name in avaliableImages
+    for name in opts.images
       html += "<li data-name='#{ name }'><img src='#{ dir }#{ name }.png' width='20' height='20' /></li>"
 
     $list= $(tpl)
