@@ -1,5 +1,7 @@
 .simditor .simditor-toolbar .toolbar-menu-emoji {
   width: 282px;
+  left: auto;
+  right: 0;
 }
 .simditor .simditor-toolbar .emoji-list {
   overflow: hidden;
@@ -16,12 +18,16 @@
 .simditor .simditor-toolbar .emoji-list img {
   display: block;
 }
+
+.editor-style img[data-emoji],
 .simditor .simditor-body img[data-emoji] {
   width: 1.1em;
   height: 1.1em;
   display: inline-block;
   margin: 0;
+  padding: 0 3px;
   vertical-align: text-top;
   max-width: inherit;
   box-shadow: none;
+  cursor: default;
 }
