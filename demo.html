@@ -26,28 +26,27 @@
 			</ul>
 		</textarea>
 	</section>
-
-	<script type="text/javascript" src="vendor/bower/simditor/lib/simditor-all.js"></script>
-	<script type="text/javascript" src="lib/simditor-emoji.js"></script>
-	<script type="text/javascript">
-		$(function() {
-			var editor = new Simditor({
-				textarea: $('#txt-content'),
-				placeholder: '这里输入文字...',
-				pasteImage: true,
-				toolbar: ['title', 'bold', 'italic', 'underline', 'strikethrough', '|', 'ol', 'ul', 'blockquote', 'code', 'table', '|', 'link', 'image', 'emoji', 'hr', '|', 'indent', 'outdent'],
-				defaultImage: 'images/image.png',
-				upload: location.search === '?upload' ? {
-					url: '/upload'
-				} : false,
-				emoji: {
-					imagePath: 'images/emoji/'
-				}
-			});
-		});
-	</script>
-
 </div>
+
+<script type="text/javascript" src="vendor/bower/simditor/lib/simditor-all.js"></script>
+<script type="text/javascript" src="lib/simditor-emoji.js"></script>
+<script type="text/javascript">
+$(function() {
+	var editor = new Simditor({
+		textarea: $('#txt-content'),
+		placeholder: '这里输入文字...',
+		pasteImage: true,
+		toolbar: ['emoji', 'title', 'bold', 'italic', 'underline', 'strikethrough', '|', 'ol', 'ul', 'blockquote', 'code', 'table', '|', 'link', 'image', 'hr', '|', 'indent', 'outdent'],
+		defaultImage: 'images/image.png',
+		upload: location.search === '?upload' ? {
+			url: '/upload'
+		} : false,
+		emoji: {
+			imagePath: 'images/emoji/'
+		}
+	});
+});
+</script>
 
 </body>
 </html>

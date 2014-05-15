@@ -92,6 +92,7 @@ class EmojiButton extends SimditorButton
 
       @editor.trigger 'valuechanged'
       @editor.trigger 'selectionchanged'
+      false
 
 
 Simditor.Toolbar.addButton EmojiButton
