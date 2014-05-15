@@ -21,3 +21,5 @@ node_modules
 _SpecRunner.html
 
 vendor
+.bundle
+Gemfile.lock

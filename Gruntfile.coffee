@@ -8,6 +8,7 @@ module.exports = (grunt) ->
       styles:
         options:
           style: 'expanded'
+          bundleExec: true
         files:
           'lib/simditor-emoji.css': 'src/simditor-emoji.scss'
     coffee:
