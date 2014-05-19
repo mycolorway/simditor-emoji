@@ -1,7 +1,7 @@
 simditor-emoji
 ==============
 
-[Simditor](http://simditor.tower.im/) 的第三方扩展，为工具栏提高按钮，在内容中插入 Emoji 图片。
+[Simditor](http://simditor.tower.im/) 的官方扩展，为工具栏提高按钮，在内容中插入 Emoji 图片。
 
 ###如何使用
 
