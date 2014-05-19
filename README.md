@@ -5,16 +5,16 @@ simditor-emoji
 
 ###如何使用
 
-在 Simditor 的基础上额外引用 simditor-emoji 的脚本和样式 
+在 Simditor 的基础上额外引用 simditor-emoji 的脚本和样式
 
-```js
-<link rel="stylesheet" type="text/css" href="/assets/stylesheets/simditor-emoji.css">
+```html
+<link rel="stylesheet" type="text/css" href="/assets/stylesheets/simditor-emoji.css" />
 <script src="/assets/javascripts/simditor-emoji.js"></script>
 ```
 
 配置
 
-```js
+```javascript
 new Simditor({
 	textarea: textareaElement,
 	...,
@@ -27,7 +27,7 @@ new Simditor({
 
 ###参数
 
-**imagePath** (Type: String)  
+**imagePath** (Type: String)
 
 emoji 图片的路径，相对或者绝对路径都可以
 
