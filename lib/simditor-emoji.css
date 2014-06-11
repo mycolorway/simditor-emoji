@@ -1,3 +1,7 @@
+.simditor .simditor-toolbar .toolbar-item-emoji span.fa {
+  color: #888;
+  font-weight: bold;
+}
 .simditor .simditor-toolbar .toolbar-menu-emoji {
   width: 296px;
 }
