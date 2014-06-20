@@ -1,5 +1,11 @@
 .simditor {
 	.simditor-toolbar {
+    .toolbar-item-emoji {
+			span.fa {
+				color: #888;
+				font-weight: bold;
+			}
+		}
 		.toolbar-menu-emoji {
 			width: 296px;
 		}
