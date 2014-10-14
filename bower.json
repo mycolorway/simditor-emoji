@@ -1,6 +1,6 @@
 {
   "name": "simditor-emoji",
-  "version": "0.0.9",
+  "version": "2.0.0",
   "homepage": "https://github.com/mycolorway/simditor-emoji",
   "authors": [
     "tinyfive <tinyfive@mycolorway.com>"
@@ -16,11 +16,11 @@
     "**/.*",
     "node_modules",
     "vendor",
-		"Gruntfile.coffee",
-		"package.json"
+    "Gruntfile.coffee",
+    "package.json"
   ],
-	"dependencies": {
-		"jquery": "~2.1.0",
-		"simditor": "~1.0.0"
-	}
+  "dependencies": {
+      "jquery": "~2.1.0",
+      "simditor": "~2.0.0"
+  }
 }

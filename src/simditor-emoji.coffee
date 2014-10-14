@@ -1,5 +1,10 @@
 
-class EmojiButton extends SimditorButton
+class EmojiButton extends Simditor.Button
+  @i18n =
+    'zh-CN':
+      title: '表情'
+    'en':
+      title: 'emoji'
 
   @images = [
     'smile'
@@ -48,7 +53,7 @@ class EmojiButton extends SimditorButton
 
   icon: 'smile-o'
 
-  title: '表情'
+  title: @::_t 'title'
 
   htmlTag: 'img'
 

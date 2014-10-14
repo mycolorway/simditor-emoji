@@ -9,19 +9,22 @@ module.exports = (grunt) ->
         options:
           style: 'expanded'
           bundleExec: true
+          sourcemap: 'none'
         files:
-          'lib/simditor-emoji.css': 'src/simditor-emoji.scss'
+          'styles/simditor-emoji.css': 'styles/simditor-emoji.scss'
     coffee:
-      emoji:
+      src:
+        options:
+          bare: true
         files:
           'lib/simditor-emoji.js': 'src/simditor-emoji.coffee'
     watch:
       styles:
-        files: ['src/*.scss']
+        files: ['styles/*.scss']
         tasks: ['sass']
-      scripts:
+      src:
         files: ['src/*.coffee']
-        tasks: ['coffee']
+        tasks: ['coffee:src']
 
   grunt.loadNpmTasks 'grunt-contrib-sass'
   grunt.loadNpmTasks 'grunt-contrib-coffee'

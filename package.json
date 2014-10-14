@@ -1,7 +1,7 @@
 {
   "name": "simditor-emoji",
-  "version": "0.0.1",
-  "description": "A simditor emoji plugin",
+  "version": "2.0.0",
+  "description": "simditor emoji plugin",
   "main": "src/simditor-emoji.coffee",
   "repository": {
     "type": "git",
