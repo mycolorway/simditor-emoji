@@ -101,3 +101,4 @@ class EmojiButton extends Simditor.Button
 
 
 Simditor.Toolbar.addButton EmojiButton
+

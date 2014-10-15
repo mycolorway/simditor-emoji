@@ -22,9 +22,9 @@ module.exports = (grunt) ->
       all:
         src: 'lib/simditor-emoji.js'
         template: 'umd'
-        # amdModuleId: 'simditor-emoji'
-        # objectToExport: 'SimditorEmoji'
-        # globalAlias: 'SimditorEmoji'
+        amdModuleId: 'simditor-emoji'
+        objectToExport: 'EmojiButton'
+        globalAlias: 'SimditorEmoji'
         deps:
           'default': ['$', 'Simditor']
           amd: ['jquery', 'simditor']
