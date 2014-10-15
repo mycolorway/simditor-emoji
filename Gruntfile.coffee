@@ -18,16 +18,31 @@ module.exports = (grunt) ->
           bare: true
         files:
           'lib/simditor-emoji.js': 'src/simditor-emoji.coffee'
+    umd:
+      all:
+        src: 'lib/simditor-emoji.js'
+        template: 'umd'
+        # amdModuleId: 'simditor-emoji'
+        # objectToExport: 'SimditorEmoji'
+        # globalAlias: 'SimditorEmoji'
+        deps:
+          'default': ['$', 'Simditor']
+          amd: ['jquery', 'simditor']
+          cjs: ['jquery', 'Simditor']
+          global:
+            items: ['jQuery', 'Simditor']
+            prefix: ''
     watch:
       styles:
         files: ['styles/*.scss']
         tasks: ['sass']
       src:
         files: ['src/*.coffee']
-        tasks: ['coffee:src']
+        tasks: ['coffee:src', 'umd']
 
   grunt.loadNpmTasks 'grunt-contrib-sass'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-watch'
+  grunt.loadNpmTasks 'grunt-umd'
 
-  grunt.registerTask 'default', ['sass', 'coffee', 'watch']
+  grunt.registerTask 'default', ['sass', 'coffee', 'umd', 'watch']
