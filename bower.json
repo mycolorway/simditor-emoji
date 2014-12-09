@@ -19,6 +19,9 @@
     "Gruntfile.coffee",
     "package.json"
   ],
+  "devDependencies": {
+    "jasmine-jquery": "2.x"
+  },
   "dependencies": {
       "jquery": "~2.1.0",
       "simditor": "~2.0.0"

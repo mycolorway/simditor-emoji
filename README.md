@@ -1,5 +1,6 @@
-simditor-emoji
-==============
+# Simditor Emoji
+[![Circle CI](https://circleci.com/gh/mycolorway/simditor-emoji.png?style=badge)](https://circleci.com/gh/mycolorway/simditor-emoji)
+
 
 [Simditor](http://simditor.tower.im/) 的官方扩展，为工具栏提高按钮，在内容中插入 Emoji 图片。
 
