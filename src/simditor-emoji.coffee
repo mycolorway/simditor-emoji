@@ -2,9 +2,9 @@
 class EmojiButton extends Simditor.Button
   @i18n =
     'zh-CN':
-      title: '表情'
+      emoji: '表情'
     'en':
-      title: 'emoji'
+      emoji: 'emoji'
 
   @images = [
     'smile'
@@ -53,15 +53,12 @@ class EmojiButton extends Simditor.Button
 
   icon: 'smile-o'
 
-  title: @::_t 'title'
-
   htmlTag: 'img'
 
   menu: true
 
   constructor: (args...) ->
     super args...
-
     $.merge @editor.formatter._allowedAttributes['img'], ['data-emoji', 'alt']
 
   renderMenu: ->
