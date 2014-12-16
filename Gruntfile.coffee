@@ -66,6 +66,7 @@ module.exports = (grunt) ->
             'vendor/bower/jasmine-jquery/lib/jasmine-jquery.js'
             'vendor/bower/simple-module/lib/module.js'
             'vendor/bower/simple-uploader/lib/uploader.js'
+            'vendor/bower/simple-hotkeys/lib/hotkeys.js'
             'vendor/bower/simditor/lib/simditor.js'
           ]
 
@@ -77,4 +78,4 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-umd'
 
   grunt.registerTask 'default', ['sass', 'coffee', 'umd', 'jasmine:test:build', 'watch']
-  grunt.registerTask 'test', ['sass', 'coffee', 'umd', 'jasmine', 'watch']
+  grunt.registerTask 'test', ['sass', 'coffee', 'umd', 'jasmine']
