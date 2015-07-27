@@ -1,6 +1,6 @@
 {
   "name": "simditor-emoji",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "simditor emoji plugin",
   "main": "src/simditor-emoji.coffee",
   "repository": {
