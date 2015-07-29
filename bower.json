@@ -1,6 +1,6 @@
 {
   "name": "simditor-emoji",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "homepage": "https://github.com/mycolorway/simditor-emoji",
   "authors": [
     "tinyfive <tinyfive@mycolorway.com>"
@@ -23,7 +23,7 @@
     "jasmine-jquery": "2.x"
   },
   "dependencies": {
-      "jquery": "~2.1.0",
-      "simditor": "~2.1.15"
+    "jquery": "~2.1.0",
+    "simditor": "~2.2.0"
   }
 }

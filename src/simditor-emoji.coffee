@@ -3,7 +3,7 @@ class EmojiButton extends Simditor.Button
   @i18n =
     'zh-CN':
       emoji: '表情'
-    'en':
+    'en-US':
       emoji: 'emoji'
 
   @images = [
@@ -53,8 +53,6 @@ class EmojiButton extends Simditor.Button
 
   icon: 'smile-o'
 
-  htmlTag: 'img'
-
   menu: true
 
   constructor: (args...) ->
@@ -86,16 +84,17 @@ class EmojiButton extends Simditor.Button
       return unless @editor.inputManager.focused
 
       $img = $(e.currentTarget).find('img').clone()
-                .attr({
-                  'data-emoji': true
-                  'data-non-image': true
-                })
+        .attr({
+          'data-emoji': true
+          'data-non-image': true
+        })
       @editor.selection.insertNode $img
 
       @editor.trigger 'valuechanged'
       @editor.trigger 'selectionchanged'
       false
 
+  status: ->
+    # do nothing
 
 Simditor.Toolbar.addButton EmojiButton
-
