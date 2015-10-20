@@ -1,6 +1,6 @@
 {
   "name": "simditor-emoji",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "simditor emoji plugin",
   "main": "lib/simditor-emoji.js",
   "repository": {
@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "jquery": "~2.1.0",
-    "simditor": "~2.2.0"
+    "simditor": "2.3.x"
   },
   "devDependencies": {
     "grunt": "0.x",
