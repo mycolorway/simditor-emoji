@@ -74,7 +74,9 @@ class EmojiButton extends Simditor.Button
     dir  = opts.imagePath.replace(/\/$/, '') + '/'
 
     for name in opts.images
-      html += "<li data-name='#{ name }'><img src='#{ dir }#{ name }' width='20' height='20' alt='#{ name }' /></li>"
+      src = "#{ dir }#{ name }"
+      name = name.split('.')[0]
+      html += "<li data-name='#{ name }'><img src='#{ src }' width='20' height='20' alt='#{ name }' /></li>"
 
     $list= $(tpl)
     $list.html(html).appendTo(@menuWrapper)
