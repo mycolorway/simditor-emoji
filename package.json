@@ -16,7 +16,7 @@
   "scripts": {
     "test": "grunt test --verbose"
   },
-  "dependencies": {
+  "peerDependencies": {
     "jquery": "~2.1.0",
     "simditor": "2.3.x"
   },
